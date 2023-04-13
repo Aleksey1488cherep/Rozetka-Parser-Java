@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #ebedef;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h3, p, a {
+      color: navy;
+      font-family: Arial, sans-serif;
+    }
+    h3 {
+      font-size: 36px;
+      text-align: center;
+      margin-top: 50px;
+    }
+    p {
+      font-size: 24px;
+      text-align: center;
+      padding: 20px;
+      border: 3px solid navy;
+      border-radius: 10px;
+      margin: 30px;
+    }
+    a {
+      display: block;
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 500;
+      text-decoration: none;
+      text-align: center;
+      color: navy;
+      border: 3px solid navy;
+      border-radius: 10px;
+      padding: 10px;
+      width: 200px;
+      transition: all 0.2s ease;
+    }
+    a:hover {
+      background-color: navy;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<h3>Про проект</h3>
+<h3><p th:text="${infoHeader}">Гречен О.С.</p></h3>
+<p th:text="${infoAboutMe}">Студент</p>
+<p th:text="${infoProject}">Проект</p>
+<a href="index">Back to main page</a>
+
+</body>
+</html>
